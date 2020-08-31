@@ -44,6 +44,10 @@ RUN apt-get update \
   zip \
   gnupg2 \
   supervisor \
+  git \
+  openssh-client \
+  unzip \
+  ssh \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir -p /var/log/supervisor \
   && apt-get autoremove -y && apt-get clean \
